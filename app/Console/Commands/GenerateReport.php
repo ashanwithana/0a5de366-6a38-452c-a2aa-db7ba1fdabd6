@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Services\DiagnosticReportService;
+use App\Services\FeedbackReportService;
 use App\Services\ProgressReportService;
 use Illuminate\Console\Command;
 
@@ -39,7 +40,7 @@ class GenerateReport extends Command
                 $report = new ProgressReportService();
                 break;
             case '3':
-                // $report = new FeedbackReportService();
+                $report = new FeedbackReportService();
                 break;
             default:
                 $this->error("Invalid report type. Choose 1, 2, or 3.");
