@@ -18,7 +18,7 @@ class GenerateReport extends Command
      *
      * @var string
      */
-    protected $description = 'Generate a report for a student';
+    protected $description = 'generate a report for a student';
 
     /**
      * Execute the console command.

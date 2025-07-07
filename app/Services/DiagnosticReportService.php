@@ -16,7 +16,7 @@ class DiagnosticReportService
             return "Student not found.";
         }
 
-        // Get latest completed assessment
+        // get latest completed assessment
         $studentAssessments = collect($responses)
             ->filter(fn($r) => $r['student']['id'] === $studentId && !empty($r['completed']))
             ->sortByDesc(fn($r) => \DateTime::createFromFormat('d/m/Y H:i:s', $r['completed']));
@@ -28,7 +28,7 @@ class DiagnosticReportService
         $latest = $studentAssessments->first();
         $assessment = collect($assessments)->firstWhere('id', $latest['assessmentId']);
 
-        // Correct answer logic
+        // ciorrect answer 
         $correctByStrand = [];
         $totalByStrand = [];
 
