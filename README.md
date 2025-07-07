@@ -16,24 +16,29 @@ JSON data files placed in storage/app/data/
 
 Running the CLI Application
 To run the reporting system:
-
+```
 php artisan report:generate
+```
 
 You will be prompted in the console:
-
+```
 Please enter the Student ID:
 > ( Type the StudentId )
-
+```
+```
 Report to generate (1 for Diagnostic, 2 for Progress, 3 for Feedback):
 > ( Type the Report ID )
-
+```
 
 Running Tests
 You can run automated tests to verify the report services:
+```
 php artisan test
-
+```
 Or using PHPUnit directly:
+```
 vendor/bin/phpunit
+```
 
 Tests include:
 - Correct report output
@@ -41,9 +46,8 @@ Tests include:
 - Score improvement tracking
 - Feedback with hints for wrong answers
 
-
-```
 Folder Structure 
+```
 app/
 ├── Console/
 │   └── Commands/GenerateReport.php
