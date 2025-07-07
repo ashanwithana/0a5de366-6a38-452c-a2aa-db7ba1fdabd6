@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Services\DiagnosticReportService;
+use App\Services\ProgressReportService;
 use Illuminate\Console\Command;
 
 class GenerateReport extends Command
@@ -35,7 +36,7 @@ class GenerateReport extends Command
                 $report = new DiagnosticReportService();
                 break;
             case '2':
-                // $report = new ProgressReportService();
+                $report = new ProgressReportService();
                 break;
             case '3':
                 // $report = new FeedbackReportService();
