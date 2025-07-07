@@ -27,7 +27,8 @@ class GenerateReport extends Command
      */
     public function handle()
     {
-         $studentId = $this->ask('Please enter the Student ID');
+        // Prompt the user for the student ID and report type
+        $studentId = $this->ask('Please enter the Student ID');
         $reportChoice = $this->ask('Report to generate (1 for Diagnostic, 2 for Progress, 3 for Feedback)');
 
         $this->line("");
