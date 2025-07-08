@@ -6,13 +6,36 @@ PHP 8.2 or newer
 
 Composer installed globally
 
-
 Laravel CLI (or install via Composer)
 
+Installation & Environment Setup
+
+Clone the repository:
+```
+git clone https://github.com/ashanwithana/0a5de366-6a38-452c-a2aa-db7ba1fdabd6.git
+```
+
+Open the Project From cmd or terminal
+
+Install PHP dependencies with Composer:
+
+```
+composer install
+```
+
+Create the .env file:
+
+```
+cp .env.example .env
+```
+
+Generate the application key:
+
+```
+php artisan key:generate
+```
 
 JSON data files placed in storage/app/data/
-
-
 
 Running the CLI Application
 To run the reporting system:
