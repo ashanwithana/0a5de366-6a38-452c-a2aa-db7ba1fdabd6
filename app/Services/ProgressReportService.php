@@ -32,7 +32,7 @@ class ProgressReportService
         $scores = [];
 
         foreach ($studentAssessments as $r) {
-            $date = \DateTime::createFromFormat('d/m/Y H:i:s', $r['completed'])->format('jS F Y');
+            $date = \DateTime::createFromFormat('d/m/Y H:i:s', $r['assigned'])->format('jS F Y');
             $raw = $r['results']['rawScore'] ?? 'N/A';
             $report .= "\nDate: {$date}, Raw Score: {$raw} out of 16";
             $scores[] = $raw;
