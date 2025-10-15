@@ -85,8 +85,7 @@ tests/
     ├── FeedbackReportTest.php
     └── ProgressReportTest.php
 
-storage/
-└── app/
+app/
     └── data/
         ├── assessments.json
         ├── questions.json
